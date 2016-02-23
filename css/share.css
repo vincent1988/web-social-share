@@ -1,0 +1,321 @@
+/*分享图标*/
+.share-ico32 a, .share-ico20 a, .share-ico16 a, .share-box a, .share-box b {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    background: url(../images/share_ico.png) no-repeat;
+}
+
+.share-ico32 a {
+    height: 32px;
+    line-height: 32px;
+    padding-left: 32px;
+}
+
+.share-ico32 .tsina {
+    background-position: 0 0
+}
+
+.share-ico32 .qzone {
+    background-position: 0 -40px
+}
+
+.share-ico32 .tqq {
+    background-position: 0 -80px
+}
+
+.share-ico32 .renren {
+    background-position: 0 -120px
+}
+
+.share-ico32 .kaixin {
+    background-position: 0 -160px
+}
+
+.share-ico32 .copy {
+    background-position: 0 -200px
+}
+
+.share-ico20 a {
+    height: 20px;
+    line-height: 20px;
+    padding-left: 24px;
+}
+
+.share-ico20 .tsina {
+    background-position: 0 -240px
+}
+
+.share-ico20 .qzone {
+    background-position: 0 -270px
+}
+
+.share-ico20 .tqq {
+    background-position: 0 -300px
+}
+
+.share-ico20 .renren {
+    background-position: 0 -330px
+}
+
+.share-ico20 .kaixin {
+    background-position: 0 -360px
+}
+
+.share-ico20 .copy {
+    background-position: 0 -390px
+}
+
+.share-ico16 a {
+    height: 16px;
+    line-height: 16px;
+    padding-left: 20px;
+}
+
+.share-ico16 .tsina {
+    background-position: 0px -420px
+}
+
+.share-ico16 .qzone {
+    background-position: 0px -440px
+}
+
+.share-ico16 .tqq {
+    background-position: 0px -460px
+}
+
+.share-ico16 .renren {
+    background-position: 0px -480px
+}
+
+.share-ico16 .kaixin001 {
+    background-position: 0px -500px
+}
+
+.share-ico16 .copy {
+    background-position: 0px -520px
+}
+
+.share-ico16 .tsina-grey {
+    background-position: 0 -541px;
+}
+
+.share-ico16 .qzone-grey {
+    background-position: 0 -560px
+}
+
+.share-ico16 .tqq-grey {
+    background-position: 0 -579px;
+}
+
+.share-box a, .share-box b {
+    height: 16px;
+    line-height: 16px;
+    padding-left: 20px;
+    margin: 5px 0;
+    color: #666;
+}
+
+.share-box .tsina {
+    background-position: 0px -420px
+}
+
+.share-box .qzone {
+    background-position: 0px -440px
+}
+
+.share-box .tqq {
+    background-position: 0px -460px
+}
+
+.share-box .renren {
+    background-position: 0px -480px
+}
+
+.share-box .kaixin001 {
+    background-position: 0px -500px
+}
+
+.share-box .copy {
+    background-position: 0px -520px
+}
+
+/*分享弹出层*/
+#share_popup {
+    width: 400px;
+    display: none;
+}
+
+#share_popup_form {
+    display: block;
+}
+
+#share_popup_form, #share_popup_msg {
+    height: 164px;
+}
+
+#share_popup_msg {
+    line-height: 164px;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+}
+
+#share_popup_form .top {
+    height: 24px;
+    line-height: 24px;
+}
+
+#share_popup_form .mid {
+    border: 1px solid #ddd;
+    background: #F7F7F7;
+    margin: 10px 0;
+}
+
+#share_popup_img {
+    width: 80px;
+    height: 80px;
+    margin: 4px;
+    background-image: url(../images/nopic_s.png);
+}
+
+#share_popup_text {
+    width: 301px;
+    height: 80px;
+    border: 0;
+    border-left: 1px solid #EBEBEB;
+    padding: 4px;
+}
+
+#share_popup_form .bot {
+    text-align: right;
+}
+
+#share_popup_form .bot a {
+    background: url(http://timg.sjs.sinajs.cn/t4/appstyle/widget/images/library/base/btns_word.png) -261px 0;
+    display: inline-block;
+    height: 40px;
+    width: 86px;
+    overflow: hidden;
+    border: 0;
+    text-indent: -99em;
+    text-align: left;
+}
+
+#share_popup_form .bot a:hover {
+    background-position: -435px 0;
+}
+
+#share_popup_form .bot a.dis {
+    background-position: -522px 0;
+}
+
+/*弹出层*/
+.g-mask, .g-mask iframe, .g-popup {
+    width: 100%;
+    height: 100%;
+}
+
+.g-mask {
+    background: #fff;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+.g-mask iframe {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.g-mask, .g-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    _position: absolute;
+    _top: expression(documentElement.scrollTop + "px");
+}
+
+.g-black-mask {
+    background: #000;
+    opacity: 0.7;
+}
+
+.g-black-popup {
+    position: absolute;
+}
+
+.g-popup {
+    text-align: center;
+}
+
+.g-popup-wrap {
+    padding: 30px;
+    background: #fff;
+    border: #E95A59 solid 4px;
+    text-align: left;
+    position: relative;
+    margin: 0 auto;
+}
+
+.g-popup-title {
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #e25150;
+    border-bottom: 1px dotted #AAAAAA
+}
+
+.g-popup-hide {
+    width: 34px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-position: 0 -1320px;
+    z-index: 99;
+}
+
+.g-popup-hide:hover {
+    background-position: 0 -1360px;
+}
+
+.g-info-hide {
+    width: 34px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    background-position: 0 -1320px;
+    top: 5px;
+    right: 5px;
+}
+
+.g-info-hide:hover {
+    background-position: 0 -1360px;
+}
+
+.g-popup-tip {
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10001;
+    bottom: 0;
+    right: 0;
+    _position: absolute;
+    _bottom: auto;
+    _top: expression(eval(document.documentElement.scrollTop + document.documentElement.clientHeight - this.offsetHeight - (parseInt(this.currentStyle.marginTop, 10) || 0) - (parseInt(this.currentStyle.marginBottom, 10) || 0)));
+}
+
+/*其他*/
+.g-mr-5 {
+    margin-right: 5px !important;
+}
+
+.g-btn {
+    cursor: pointer;
+    margin-right: 10px;
+}
